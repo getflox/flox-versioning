@@ -27,10 +27,10 @@ setup(
     packages=find_packages(where=dirname(abspath(__file__))),
     entry_points='''
         [flox.cli_plugins]
-        git=flox_versioning.versioning:versioning
+        versioning=flox_versioning.versioning:versioning
 
         [flox.cli_plugins.config]
-        aws=flox_versioning:config
+        versioning=flox_versioning:config
     ''',
     install_requires=install_requires,
     tests_require=tests_require,
